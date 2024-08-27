@@ -28,7 +28,7 @@ const ChatList = () => {
 
           const user = userDocSnap.data();
 
-          return { ...item, user };
+          return { user };
         });
 
         const chatData = await Promise.all(promises);
